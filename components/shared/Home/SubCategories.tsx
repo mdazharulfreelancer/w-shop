@@ -32,7 +32,7 @@ const SubCategories = () => {
                       className="rounded-full sm:rounded-md "
                     />
                     <div className="sm:hidden  w-full bg-primary/10 border-1 border-primary rounded-md flex text-center items-center justify-center mt-2">
-                      <span className="text-[12px] text-gray-600 text-center">
+                      <span className="text-[14px] text-gray-600 text-center">
                         {item?.name.slice(0, 6)}
                       </span>
                     </div>

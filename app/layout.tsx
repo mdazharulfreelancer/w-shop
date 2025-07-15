@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-poppins  antialiased`}>
+      <body className={` antialiased`}>
         <div className=" relative flex flex-col h-screen w-full overflow-y-auto">
           {children}
         </div>

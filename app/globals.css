@@ -44,6 +44,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serifNotoSans-Regular, -apple-system,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 :root {
