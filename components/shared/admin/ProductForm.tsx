@@ -56,7 +56,13 @@ const ProductForm = () => {
     await fetch("https://w-shope.vercel.app/api/v1/register-test", {
       method: "POST",
       body: formData,
-    });
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
