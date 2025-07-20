@@ -22,30 +22,41 @@ const Card = () => {
                 />
               </div>
               {/* title */}
-              <div className="w-full flex flex-wrap justify-center items-center mt-1 text-center">
-                <span className=" text-normal text-center text-wrap flex flex-wrap  text-gray-700 font-semibold ">
-                  {"Noah Blender 888"}
+              <div className="w-full flex flex-wrap sm:justify-center sm:items-center mt-1 sm:text-center">
+                <span className=" text-normal sm:text-center text-wrap flex flex-wrap  text-gray-700 leading-5 font-medium">
+                  {"Noah Blender 888 version 2024"}
                 </span>
               </div>
 
               {/* price */}
               <div className="">
                 <div className="w-full flex flex-col">
-                  <div className="w-full flex flex-wrap justify-center items-center mt-1 text-center gap-2">
-                    <div>
-                      <span>145</span>
-                    </div>
+                  <div className="w-full flex flex-wrap sm:justify-center items-center mt-1 text-center sm:text-center gap-1">
                     {/* was price */}
-                    <div>
-                      <span>{"was 160"}</span>
+                    <div className="flex items-center text-center">
+                      <span className="line-through text-gray-500 text-sm">
+                        {"৳160"}
+                      </span>
+                    </div>
+                    {/* regular */}
+                    <div className="flex items-center text-[19px] text-center">
+                      <span className="font-semibold text-primary ">৳145</span>
+                    </div>
+                    {/* per price */}
+                    <div className="flex items-center text-center">
+                      <span className="text-primary/80 text-sm ">
+                        {"per piece"}
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* free deceloper */}
+              {/* Delevari Time */}
               <div className="w-full flex justify-start items-center mt-1">
-                <span>free devevari</span>
+                <span className="time text-[10px] flex justify-center items-center  text-gray-700 bg-primary/20 pt-1 sm:pt-1 sm:pb-1 border-1 border-primary  text-center px-2 sm:text-[12px] rounded-md">
+                  {"Delivery in 3-5 days"}
+                </span>
               </div>
             </div>
           </div>
