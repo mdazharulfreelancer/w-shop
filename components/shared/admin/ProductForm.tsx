@@ -21,7 +21,7 @@ const ProductForm = () => {
     defaultValues: {
       name: "",
       description: "",
-      image: undefined,
+      images: undefined,
 
       // brand : "",
       // tags : "",
@@ -50,8 +50,13 @@ const ProductForm = () => {
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("description", data.description);
-    const files: FileList = data.image;
-    Array.from(files).forEach((file) => formData.append("image", file));
+    const files: FileList = data.images;
+    Array.from(files).forEach((file) => formData.append("images", file));
+
+    await fetch("https://w-shope.vercel.app/api/v1/register-test", {
+      method: "POST",
+      body: formData,
+    });
   };
 
   return (
@@ -78,14 +83,14 @@ const ProductForm = () => {
           })}
         <FormField
           control={form.control}
-          name="image"
+          name="images"
           render={({}) => (
             <FormItem>
               <FormLabel>Upload Image</FormLabel>
               <FormControl>
                 <Input
                   type="file"
-                  {...form.register("image")}
+                  {...form.register("images")}
                   accept="image/*"
                   multiple
                 />
